@@ -1,6 +1,6 @@
 name: mark_with_label
 description: With that package you will be able to use Marker With Label API for Google Maps JavaScript API from Dart scripts.
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/olimou/dart-markerwithlabel
 author: Emerson Moura <olimou@gmail.com>
 
