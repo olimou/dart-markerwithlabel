@@ -4,7 +4,7 @@
 /// Support for doing something awesome.
 ///
 /// More dartdocs go here.
-library dart_marker_with_label;
+library marker_with_label;
 
 export 'src/marker_with_label.dart';
 
