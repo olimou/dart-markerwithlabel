@@ -42,6 +42,11 @@ class MarkerWithLabel extends JsInterface {
 class MarkerWithLabelOptions extends JsInterface {
   MarkerWithLabelOptions.created(JsObject o) : super.created(o);
   MarkerWithLabelOptions() : this.created(new JsObject(context['Object']));
+  void set icon(String _icon) {
+    asJsObject(this)['icon'] = _icon;
+  }
+
+  String get icon => asJsObject(this)['icon'];
   void set labelContent(String _labelContent) {
     asJsObject(this)['labelContent'] = _labelContent;
   }

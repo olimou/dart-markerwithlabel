@@ -1,7 +1,7 @@
 import 'dart:html';
 
 import 'package:google_maps/google_maps.dart';
-import 'package:mark_with_label/mark_with_label.dart';
+import 'package:marker_with_label/marker_with_label.dart';
 
 void main() {
   var latLng = new LatLng(-34.397, 150.644);
