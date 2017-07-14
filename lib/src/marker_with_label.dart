@@ -13,6 +13,7 @@ abstract class _MarkerWithLabel implements JsInterface {
 @anonymous
 abstract class _MarkerWithLabelOptions implements JsInterface {
   factory _MarkerWithLabelOptions()=> null;
+  String icon;
   String labelContent;
   Point labelAnchor;
   String labelClass;

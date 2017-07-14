@@ -11,3 +11,7 @@
 ## 0.0.3
 
 - Fix example dependency import
+
+## 0.0.4
+
+- Add icon property on marker options
