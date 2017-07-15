@@ -35,6 +35,47 @@ class MarkerWithLabel extends JsInterface {
 
   MarkerWithLabelOptions get opt_options =>
       __codec4.decode(asJsObject(this)['opt_options']);
+
+  Stream get onAnimationChanged =>
+      getStream(this, #onAnimationChanged, "animation_changed");
+  Stream<MouseEvent> get onClick => getStream(
+      this, #onClick, "click", (JsObject o) => new MouseEvent.created(o));
+  Stream get onClickableChanged =>
+      getStream(this, #onClickableChanged, "clickable_changed");
+  Stream get onCursorChanged =>
+      getStream(this, #onCursorChanged, "cursor_changed");
+  Stream<MouseEvent> get onDblclick => getStream(
+      this, #onDblclick, "dblclick", (JsObject o) => new MouseEvent.created(o));
+  Stream<MouseEvent> get onDrag => getStream(
+      this, #onDrag, "drag", (JsObject o) => new MouseEvent.created(o));
+  Stream<MouseEvent> get onDragend => getStream(
+      this, #onDragend, "dragend", (JsObject o) => new MouseEvent.created(o));
+  Stream get onDraggableChanged =>
+      getStream(this, #onDraggableChanged, "draggable_changed");
+  Stream<MouseEvent> get onDragstart => getStream(this, #onDragstart,
+      "dragstart", (JsObject o) => new MouseEvent.created(o));
+  Stream get onFlatChanged => getStream(this, #onFlatChanged, "flat_changed");
+  Stream get onIconChanged => getStream(this, #onIconChanged, "icon_changed");
+  Stream<MouseEvent> get onMousedown => getStream(this, #onMousedown,
+      "mousedown", (JsObject o) => new MouseEvent.created(o));
+  Stream<MouseEvent> get onMouseout => getStream(
+      this, #onMouseout, "mouseout", (JsObject o) => new MouseEvent.created(o));
+  Stream<MouseEvent> get onMouseover => getStream(this, #onMouseover,
+      "mouseover", (JsObject o) => new MouseEvent.created(o));
+  Stream<MouseEvent> get onMouseup => getStream(
+      this, #onMouseup, "mouseup", (JsObject o) => new MouseEvent.created(o));
+  Stream get onPositionChanged =>
+      getStream(this, #onPositionChanged, "position_changed");
+  Stream<MouseEvent> get onRightclick => getStream(this, #onRightclick,
+      "rightclick", (JsObject o) => new MouseEvent.created(o));
+  Stream get onShapeChanged =>
+      getStream(this, #onShapeChanged, "shape_changed");
+  Stream get onTitleChanged =>
+      getStream(this, #onTitleChanged, "title_changed");
+  Stream get onVisibleChanged =>
+      getStream(this, #onVisibleChanged, "visible_changed");
+  Stream get onZindexChanged =>
+      getStream(this, #onZindexChanged, "zindex_changed");
 }
 
 @GeneratedFrom(_MarkerWithLabelOptions)
@@ -43,25 +84,25 @@ class MarkerWithLabelOptions extends JsInterface {
   MarkerWithLabelOptions.created(JsObject o) : super.created(o);
   MarkerWithLabelOptions() : this.created(new JsObject(context['Object']));
   void set icon(String _icon) {
-    asJsObject(this)['icon'] = _icon;
+    asJsObject(this)['icon'] = __codec0.encode(_icon);
   }
 
-  String get icon => asJsObject(this)['icon'];
+  String get icon => __codec0.decode(asJsObject(this)['icon']);
   void set labelContent(String _labelContent) {
-    asJsObject(this)['labelContent'] = _labelContent;
+    asJsObject(this)['labelContent'] = __codec0.encode(_labelContent);
   }
 
-  String get labelContent => asJsObject(this)['labelContent'];
+  String get labelContent => __codec0.decode(asJsObject(this)['labelContent']);
   void set labelAnchor(Point _labelAnchor) {
     asJsObject(this)['labelAnchor'] = __codec1.encode(_labelAnchor);
   }
 
   Point get labelAnchor => __codec1.decode(asJsObject(this)['labelAnchor']);
   void set labelClass(String _labelClass) {
-    asJsObject(this)['labelClass'] = _labelClass;
+    asJsObject(this)['labelClass'] = __codec0.encode(_labelClass);
   }
 
-  String get labelClass => asJsObject(this)['labelClass'];
+  String get labelClass => __codec0.decode(asJsObject(this)['labelClass']);
   void set labelStyle(_labelStyle) {
     asJsObject(this)['labelStyle'] = __codec0.encode(_labelStyle);
   }
@@ -88,15 +129,15 @@ class MarkerWithLabelOptions extends JsInterface {
 
   bool get optimized => asJsObject(this)['optimized'];
   void set crossImage(String _crossImage) {
-    asJsObject(this)['crossImage'] = _crossImage;
+    asJsObject(this)['crossImage'] = __codec0.encode(_crossImage);
   }
 
-  String get crossImage => asJsObject(this)['crossImage'];
+  String get crossImage => __codec0.decode(asJsObject(this)['crossImage']);
   void set handCursor(String _handCursor) {
-    asJsObject(this)['handCursor'] = _handCursor;
+    asJsObject(this)['handCursor'] = __codec0.encode(_handCursor);
   }
 
-  String get handCursor => asJsObject(this)['handCursor'];
+  String get handCursor => __codec0.decode(asJsObject(this)['handCursor']);
   void set position(LatLng _position) {
     asJsObject(this)['position'] = __codec2.encode(_position);
   }

@@ -17,5 +17,9 @@ void main() {
     ..map = gMap
     ..position = latLng;
 
-  new MarkerWithLabel(markerWithLabelOptions);
+  var markerWithLabel = new MarkerWithLabel(markerWithLabelOptions);
+
+  markerWithLabel.onClick.listen((e){
+    print('Marker Click');
+  });
 }

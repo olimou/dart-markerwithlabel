@@ -15,3 +15,6 @@
 ## 0.0.4
 
 - Add icon property on marker options
+
+## 0.0.8
+- Add events
